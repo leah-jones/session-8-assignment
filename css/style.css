@@ -1,0 +1,161 @@
+@charset "utf-8";
+/* css document */
+* {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  font-weight:normal;
+}
+html {
+  background-color:gray;
+}
+body {
+  background-color:white;
+  color:#222;
+  font-family: 'Open Sans', sans-serif;
+
+}
+header {
+  display:flex;
+  justify-content:space-between;
+  padding:0 20px;
+  box-shadow:1px 1px 3px gray;
+  background-color:rgba(255,255,255,.9);
+}
+header nav ul {
+  display:flex;
+  justify-content:space-between;
+  list-style-type:none;
+}
+header nav a {
+  text-decoration:none;
+  display:block;
+  padding:25px 20px;
+  color:green;
+  font-size:20px;
+  background-color: orange;
+  transition: all .8s;
+}
+
+/* add hover */
+
+header nav a:hover {
+  background-color: green;
+  color: white;
+}
+
+h1,h2,h3 {
+  font-weight:bold;
+  color:green;
+  width:100%;
+	font-family: 'Playfair Display', serif;
+}
+h1 {
+  text-transform:uppercase;
+  font-size:28px;
+  margin-top:20px;
+}
+h2 {
+  text-align:center;
+  padding:25px 0;
+}
+p {
+  margin:20px 0;
+}
+button {
+  background-color:green;
+  color:orange;
+  font-size:18px;
+  font-weight:bold;
+  border:none;
+  border-radius:20px;
+  padding:15px 20px;
+  display:block;
+  margin:20px 0;
+}
+/* button mouseover */
+
+button:hover {
+  background-color: blue;
+  transition: all .8s;
+}
+
+/*section banner image */
+
+section:nth-child(2) {
+  background-image:url(../images/buildings.jpg);
+  min-height: 300px;
+  background-size: cover;
+  background-position:center;
+  display: flex;
+  justify-content: flex-end;
+  padding:20px;
+}
+
+/* section div */
+
+section:nth-child(2) div {
+  background-color:rgba(255,255,255,.6);
+  padding:20px;
+  text-align:center;
+  flex:.35;
+}
+
+/* third section */
+
+
+/* main */
+
+main h2, section h2 {
+  font-size:36px;
+}
+/* main div */
+
+footer {
+  background-color:gray;
+padding:20px;
+color:white;
+}
+footer ul {
+  list-style-type:none;
+  display:flex;
+}
+footer ul a {
+  text-decoration:underline;
+  color:white;
+  padding:0 15px;
+}
+form {
+  margin:40px 0;
+}
+/* #savings */
+
+#savings {
+  position: fixed;
+  top:100px;
+  width: 600px;
+  background-color:white;
+  display:none;
+
+}
+
+
+/* media query */
+
+@media screen and (max-width:600px){
+    section:nth-child(2) div {
+      flex:1;
+    }
+
+  }
+
+  @media only screen and (min-width: 768px) {
+    section:nth-child(2) div {
+      flex:.75;
+    }
+  }
+   /* End Query */
+
+}
+
+}
